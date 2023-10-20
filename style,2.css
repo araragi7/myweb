@@ -1,0 +1,80 @@
+body{
+    background-image: url("images/desktop-1600x900.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+
+    
+
+}
+
+#bb:active{
+    background-color: rgb(255, 0, 0);
+    font-size: 1.6em;
+}
+
+#bb{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+
+}
+#bb:hover{
+    background-color: rgb(0, 0, 255);
+    font-size: 1.5em;
+}
+#bb:link{
+    color: aliceblue;}
+
+#dd p{
+    color: rgb(255, 0, 0);
+    font-size: 150px;
+    background-position: 150px;
+    
+    display: none;
+
+    padding: 5px;
+}
+#dd:active p{
+    display: block;
+}
+h1::first-letter{
+    font-size: 80px;
+    font-style: Ink free ;
+}
+pre ::first-line{
+    font-size: 18px;
+    color: rgb(255, 244, 29);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#fruits li::marker{
+    content:"😃";
+    color: rgb(255, 11, 11);
+    font-size: 19px;
+
+}
+#fruits{
+    font-size: 20px;
+    color: blueviolet;
+}
+
+#ap::after{
+    content: "Ugh" ;
+    font-size: 13px;
+    color: rgb(255, 0, 0);
+}
+
+
+#ba::after{
+    content: "Um" ;
+    font-size: 13px;
+    color: rgb(255, 0, 0);
+}
+
+#or::after{
+    content: "mmm" ;
+    font-size: 13px;
+    color: rgb(255, 0, 0);
+}
+
