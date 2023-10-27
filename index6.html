@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Buttons</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 100px;
+        }
+        
+        #button-container {
+            position: relative;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #no-button {
+            background-color: #FF5733;
+            position: absolute;
+            transition: transform 0.5s;
+        }
+
+        #no-button:hover {
+            animation: moveRandom 1s;
+        }
+
+        @keyframes moveRandom {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(50px) translateY(50px);
+            }
+            50% {
+                transform: translateX(-50px) translateY(50px);
+            }
+            75% {
+                transform: translateX(50px) translateY(-50px);
+            }
+            100% {
+                transform: translateX(-50px) translateY(-50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Are you a Wi-Fi signal ?</h1>
+    <div id="button-container">
+        <button class="button" id="yes-button"><a href="index7.html">Yes</a></button>
+        <button class="button" id="no-button">No</button>
+    </div>
+    
+    <script>
+        const noButton = document.getElementById("no-button");
+        
+        noButton.addEventListener("mouseenter", () => {
+            // Generate random values for translation
+            const randomX = Math.floor(Math.random() * 300) - 100;
+            const randomY = Math.floor(Math.random() * 300) - 100;
+            
+            noButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
